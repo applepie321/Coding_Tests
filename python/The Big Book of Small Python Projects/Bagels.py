@@ -4,7 +4,7 @@ NUM_DIGITS = 3
 MAX_GUESSES = 10
 
 def main():
-    print("{}digits".format(NUM_DIGITS))
+    print(f"{NUM_DIGITS}digits")
 
     while True:
         secretNum = getSecretNum()
