@@ -8,13 +8,13 @@ def main():
 
     while True:
         secretNum = getSecretNum()
-        print(' You have {} guesses to get it.'.format(MAX_GUESSES))
+        print(f' You have {MAX_GUESSES} guesses to get it.')
         
         numGuesses = 1
         while numGuesses <= MAX_GUESSES:
             guess = ''
             while len(guess) != NUM_DIGITS or not guess.isdecimal():
-                print('Guess #{}: '.format(numGuesses))
+                print(f'Guess #{numGuesses}: ')
                 guess = input('> ')
 
             clues = getClues(guess, secretNum)
@@ -25,7 +25,7 @@ def main():
                 break
             if numGuesses > MAX_GUESSES:
                 print('You ran out of guesses.')
-                print('The answer was {}.'.format(secretNum))
+                print(f'The answer was {secretNum}.')
         
         print('Do you want to play again? (yes or no)')
         if not input('> ').lower().startswith('y'):
