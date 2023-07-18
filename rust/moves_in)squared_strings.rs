@@ -13,4 +13,3 @@ fn vert_mirror(s: String) -> String {
 fn oper(oper: fn(String) -> String, s: String) -> String {
     oper(s)
 }
-2 similar
