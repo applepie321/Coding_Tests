@@ -54,4 +54,4 @@ class Solution:
                 if odd >= len(s):
                     odd = 1
         # 리스트를 문자열로 변환하여 리턴합니다.
-        return "".join
+        return "".join(result)
