@@ -15,3 +15,4 @@ def find_max_length(nums: list[int]) -> int:
             count_dict[count] = i
 
     return max_length
+
