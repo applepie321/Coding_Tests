@@ -1,4 +1,4 @@
-def remove_nodes(self, head):
+def remove_nodes(head) -> list:
     stack = []
     current = head
 
