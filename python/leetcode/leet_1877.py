@@ -2,11 +2,11 @@
 # https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/description/?envType=daily-question&envId=2023-11-17
 
 class Solution:
-    def minPairSum(self, nums: List[int]) -> int:
-        
+    def minPairSum(self, nums: list[int]) -> int:
+
         nums.sort()
 
-        left, right = 0, len(nums) -1
+        left, right = 0, len(nums) - 1
 
         result = 0
 

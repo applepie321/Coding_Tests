@@ -4,7 +4,7 @@
 
 
 class Solution:
-    def buyChoco(self, prices: List[int], money: int) -> int:
+    def buyChoco(self, prices: list[int], money: int) -> int:
         sorted_prices = sorted(prices)
         if sorted_prices[0] + sorted_prices[1] > money:
             return money
